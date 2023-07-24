@@ -1,0 +1,44 @@
+.filter-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 100%;
+  min-width: 100%;
+  margin: 0 auto;
+  padding-block: 2rem;
+
+  .filter-options {
+    padding-block: 6px;
+  }
+
+  .filter-two-options {
+    display: flex;
+  }
+
+  .filter-two-options > div {
+    flex-grow: 1;
+    width: 150px;
+  }
+
+  .filter-two-options > div .css-1xc3v61-indicatorContainer {
+    padding: 5px !important;
+  }
+
+  .filter-button {
+    cursor: pointer;
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 18px;
+    border: none;
+    padding: 5px;
+    gap: 5px;
+    background: #f3f3f3;
+  }
+}
+
+@media (max-width: 800px) {
+  .filter-container {
+    width: 100%;
+  }
+}

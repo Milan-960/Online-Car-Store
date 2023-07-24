@@ -1,0 +1,20 @@
+// Component styles
+@import "./component/Index.scss";
+
+// Page styles
+@import "./page/Index.scss";
+
+// Ui styles
+@import "./ui/Index.scss";
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(255, 255, 255, 0.7);
+}

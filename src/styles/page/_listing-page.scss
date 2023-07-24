@@ -1,0 +1,46 @@
+.listing-page {
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+  margin: 0 auto;
+  height: 100%;
+
+  .filter-section {
+    flex: 1 1;
+    padding: 10px;
+  }
+
+  .vehicle-container {
+    width: 80%;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .vehicle-listing {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding-block: 1rem;
+  }
+
+  .no-data-found {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 800px) {
+  .listing-page {
+    flex-direction: column;
+
+    .filter-section,
+    .vehicle-container {
+      width: 100%;
+      padding: 0px;
+    }
+  }
+}

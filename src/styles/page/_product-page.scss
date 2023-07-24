@@ -1,0 +1,140 @@
+.product-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 900px;
+
+  .product-header {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  h1 {
+    margin: 0;
+    text-align: center;
+  }
+
+  .back-link {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+    margin-block: 1rem;
+  }
+
+  .back-link button {
+    text-decoration: none;
+    color: #337ab7;
+    background: none;
+    border: none;
+    font-size: 15px;
+    cursor: pointer;
+  }
+
+  .back-link button:hover {
+    text-decoration: underline;
+  }
+
+  .vehicle-details {
+    width: 100%;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .vehicle-image {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+
+  .vehicle-details .detail {
+    margin: 10px 0;
+  }
+
+  .vehicle-details .detail p {
+    margin: 0;
+  }
+
+  .vehicle-details .detail span {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .vehicle-data-wrapper {
+    width: 100%;
+    padding: 20px;
+    .vehicle-data {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  .vehicle-data .detail {
+    margin: 10px 0;
+  }
+
+  .vehicle-data .detail p {
+    margin: 0;
+  }
+
+  .vehicle-data .detail span {
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .vehicle-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+  .product-page {
+    width: 95%;
+
+    .vehicle-details {
+      grid-template-columns: 1fr;
+    }
+
+    .vehicle-data-wrapper .vehicle-data {
+      grid-template-columns: 1fr;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .product-header {
+    flex-direction: column;
+    align-items: flex-start;
+
+    h1 {
+      text-align: left;
+      padding-left: 15px;
+    }
+
+    .back-link {
+      width: 100%;
+    }
+  }
+}
