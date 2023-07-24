@@ -28,6 +28,14 @@ npm run test
 npm test -- --coverage
 ```
 
+## Home Page SS
+
+<img src="./SS/Home.png" alt="Home" />
+
+## Code Coverage
+
+<img src="./SS/Test.png" alt="Home" />
+
 ## Application Features
 
 - Create an application that will list the vehicles on initial load
